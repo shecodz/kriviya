@@ -82,11 +82,11 @@ button{font:inherit;background:none;border:none;color:inherit;cursor:pointer}
   background:
     radial-gradient(760px 460px at 84% 4%,rgba(226,48,108,.12),transparent 60%),
     radial-gradient(560px 420px at 6% 100%,rgba(139,118,115,.14),transparent 60%)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,56px);align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--magenta-2);margin-bottom:22px;padding:7px 14px;border:1px solid rgba(226,48,108,.35);border-radius:999px;background:var(--magenta-soft)}
 .eyebrow .live{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(30,175,99,.6);animation:pulse 2s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(30,175,99,.5)}70%{box-shadow:0 0 0 9px rgba(30,175,99,0)}100%{box-shadow:0 0 0 0 rgba(30,175,99,0)}}
-.hero h1{font-family:var(--font-display);font-weight:900;font-size:clamp(58px,12vw,150px);line-height:.9;letter-spacing:-.015em;margin:0 0 4px;color:var(--ink)}
+.hero h1{font-family:var(--font-display);font-weight:900;font-size:clamp(58px,11vw,128px);line-height:.9;letter-spacing:-.015em;margin:0 0 4px;color:var(--ink)}
 .hero h1 .ka{color:var(--magenta);font-style:italic;font-weight:700}
 .hero .tamil{font-family:var(--font-tamil);font-size:clamp(18px,2.6vw,26px);color:var(--mute);letter-spacing:.3em;margin-top:10px}
 .hero .sub{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:clamp(18px,2.4vw,24px);color:var(--ink-soft);margin:18px 0 4px}
@@ -104,12 +104,12 @@ button{font:inherit;background:none;border:none;color:inherit;cursor:pointer}
 .btn.out:hover{border-color:var(--magenta);color:var(--magenta);transform:translateY(-2px)}
 
 /* hanging rack visual */
-.rack{position:relative;padding-top:34px}
-.rack .rod{position:absolute;top:0;left:-4%;right:-4%;height:8px;border-radius:8px;
+.rack{position:relative;padding-top:38px}
+.rack .rod{position:absolute;top:0;left:-5%;right:-5%;height:8px;border-radius:8px;
   background:linear-gradient(180deg,#6b5d4f,#3a3128);box-shadow:0 2px 5px rgba(0,0,0,.25)}
 .rack .rod::after{content:"";position:absolute;top:50%;left:0;right:0;height:2px;background:rgba(255,255,255,.35)}
-.rack-row{display:flex;justify-content:center;gap:clamp(18px,3.4vw,34px)}
-.hang{position:relative;width:min(220px,26vw)}
+.rack-row{display:flex;justify-content:center;gap:clamp(14px,2.2vw,26px)}
+.hang{position:relative;flex:1 1 0;min-width:0;max-width:min(300px,42vw)}
 .hang .hgr{width:30px;height:30px;color:var(--mute);margin:0 auto;transform-origin:top center;transition:transform .3s,color .3s}
 .hang:hover .hgr{transform:rotate(12deg);color:var(--magenta)}
 .hang .pin{width:2px;height:16px;background:var(--mute);margin:0 auto}
@@ -232,7 +232,7 @@ footer .foot-nav a:hover{color:var(--magenta)}
   .hero-grid,.store-grid,.hours-grid{grid-template-columns:1fr}
   #top{padding-top:130px}
   .rack-row{gap:14px}
-  .hang{width:30vw}
+  .hang{max-width:min(260px,42vw)}
   .tag-grid{grid-template-columns:1fr}
   .tag-side{border-left:none;padding-left:0;flex-direction:row;align-items:center;gap:18px;flex-wrap:wrap}
   .nav a{font-size:12px}
@@ -320,12 +320,6 @@ footer .foot-nav a:hover{color:var(--magenta)}
             <div class="pin"></div>
             <img class="ph" src="img/2.jpg" alt="KRIVIYA Fashion — everyday wear" decoding="async">
             <span class="tag">New <i>In</i></span>
-          </div>
-          <div class="hang">
-            <svg class="hgr sym" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"><path d="M12 25 L32 18 L52 25"/><path d="M32 18 L32 40"/><path d="M16 32 L32 40 L48 32"/></g></svg>
-            <div class="pin"></div>
-            <img class="ph" src="img/3.jpg" alt="KRIVIYA Fashion — pick of the rack" decoding="async">
-            <span class="tag">4.9 <i>★</i></span>
           </div>
         </div>
       </div>
